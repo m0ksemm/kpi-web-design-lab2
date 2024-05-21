@@ -1,0 +1,57 @@
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Відцентровуємо вміст по вертикалі */
+}
+
+.navbar-brand img {
+width: 30px;
+height: 30px;
+}
+
+.footer {
+position: fixed;
+bottom: 0;
+width: 100%;
+height: 60px; /* Висота футера */
+background-color: #f5f5f5;
+text-align: center;
+padding-top: 20px;
+margin-top: 100px;
+}
+
+/* Підкреслення для кожного рядка таблиці */
+.table-bordered > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Видалення границь таблиці */
+.table-bordered {
+    border: none;
+}
+
+
+.mb-100 {
+    margin-bottom: 100px; /* Встановлюємо відстань 50px між контейнером контенту і футером */
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+/* Стилі для зменшення розміру картинки */
+.profile-image {
+    width: 200px; /* Ширина картинки */
+    height: auto; /* Автоматична висота */
+}
+
+.rounded-box {
+    border-radius: 10px; /* Задаємо радіус закруглення */
+    border: 2px solid #000; /* Задаємо товщину та колір бордеру */
+    padding: 20px; /* Додаємо відступи всередині div */
+    font-size: 1.5rem; /* Задаємо більший розмір тексту */
+}

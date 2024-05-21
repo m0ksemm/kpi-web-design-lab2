@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add New Product</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/my.css" />
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Ліворуч елемент хедера -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Logo" src="icons/process.png" />
+        </a>
+        <span class="navbar-text">Welcome!</span>
+      </div>
+      <!-- Праворуч елемент хедера -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">To Products List</a></li>
+        <a class="navbar-brand" href="#">
+          <img alt="Logo" src="icons/info.png" />
+        </a>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mb-100">
+    <img src="pictures/add.png" class="profile-image center-block" alt="User Image" style="margin-bottom: 20px;" />
+    <h2 class="text-center">Add New Product</h2>
+    <form id="add-product-form">
+      <div class="form-group">
+        <label for="productName">Product Name:</label>
+        <input type="text" class="form-control" id="productName" placeholder="Enter product name" required />
+      </div>
+      <div class="form-group">
+        <label for="productCode">Product Code:</label>
+        <input type="text" class="form-control" id="productCode" placeholder="Enter product code" required />
+      </div>
+      <div class="form-group">
+        <label for="productManufacturer">Product Manufacturer:</label>
+        <input type="text" class="form-control" id="productManufacturer" placeholder="Enter manufacturer" required />
+      </div>
+      <div class="form-group">
+        <label for="productQuantity">Product Quantity:</label>
+        <input type="number" class="form-control" id="productQuantity" placeholder="Enter quantity" required />
+      </div>
+      <div class="form-group">
+        <label for="productTotalPrice">Total Price:</label>
+        <input type="number" class="form-control" id="productTotalPrice" placeholder="Enter total price" required />
+      </div>
+      <button type="submit" class="btn btn-success">Add</button>
+    </form>
+    <div id="message" class="alert" style="display: none;"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">
+        &copy; 2024 Your Company. All rights reserved. |
+        <a href="about.html">About</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="mvc/controller/addcontriller.js"></script>
+  <script src="mvc/view/addview.js"></script>
+  <script src="mvc/model/addmodel.js"></script>
+</body>
+</html>

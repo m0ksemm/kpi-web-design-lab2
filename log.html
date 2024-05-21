@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+          <!-- Left header element -->
+          <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                  <img alt="Logo" src="icons/reg.png">
+              </a>
+          </div>
+          <!-- Right header element -->
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="reg.html">Register</a></li>
+          </ul>
+      </div>
+  </nav>
+
+  <div class="container mb-100">
+      <div class="row">
+          <div class="col-sm-6 col-md-4 col-md-offset-4">
+              <h2 class="text-center">Login</h2>
+              <div id="error-message" class="alert alert-danger" style="display: none;"></div>
+              <div id="success-message" class="alert alert-success" style="display: none;"></div>
+              <form id="login-form">
+                  <div class="form-group">
+                      <label for="username">Username:</label>
+                      <input type="text" class="form-control" id="username" placeholder="Enter username">
+                  </div>
+                  <div class="form-group">
+                      <label for="password">Password:</label>
+                      <input type="password" class="form-control" id="password" placeholder="Enter password">
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+              </form>
+          </div>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="container">
+          <p class="text-muted">&copy; 2024 Your Company. All rights reserved. | <a href="about.html">About</a></p>
+      </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="mvc/model/logmodel.js"></script>
+  <script src="mvc/controller/logcontroller.js"></script>
+  <script src="mvc/view/logview.js"></script>
+   
+
+</body>
+</html>

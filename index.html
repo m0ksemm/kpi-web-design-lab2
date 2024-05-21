@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/my.css" />
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Ліворуч елемент хедера -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Logo" src="icons/info.png" />
+        </a>
+        <span class="navbar-text">Welcome!</span>
+      </div>
+      <!-- Праворуч елемент хедера -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="prof.html">My profile</a></li>
+        <a class="navbar-brand" href="#">
+          <img alt="Logo" src="icons/log.png" />
+        </a>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mb-100">
+    <a href="create.html" class="btn btn-success">Add new product</a>
+
+    <h2>Products</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Code</th>
+          <th>Manufacturer</th>
+          <th>Quantity</th>
+          <th>Total Cost</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="product-list">
+        <!-- Product rows will be added here dynamically -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">
+        &copy; 2024 Your Company. All rights reserved. |
+        <a href="about.html">About</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="mvc/controller/addcontriller.js"></script>
+  <script src="mvc/view/addview.js"></script>
+  <script src="mvc/model/addmodel.js"></script>
+</body>
+</html>
